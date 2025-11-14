@@ -1,1 +1,10 @@
-venv/\ndist/\n__pycache__/\n*.pyc
+# Entorno virtual
+venv/
+
+# Distribuciones / compilados
+dist/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.exe
