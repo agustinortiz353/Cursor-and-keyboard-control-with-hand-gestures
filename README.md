@@ -1,29 +1,36 @@
-# Cursor-and-keyboard-control-with-hand-gestures
-This project allows you to control your mouse cursor and keyboard input using hand gestures captured via a webcam. By leveraging MediaPipe for hand tracking and PyAutoGUI for mouse and keyboard automation, you can interact with your computer without touching any physical devices.
-Features
+# Cursor and Keyboard Control with Hand Gestures
 
-Cursor Control: Move the mouse cursor by moving the palm of your hand.
+This project allows you to control your mouse cursor and keyboard input using hand gestures captured via a webcam. By leveraging **MediaPipe** for hand tracking and **PyAutoGUI** for mouse and keyboard automation, you can interact with your computer without touching any physical devices.
 
-Left Click: Perform a left click by touching your thumb and index finger together.
+## Features
 
-Right Click: Perform a right click by touching your thumb and middle finger together.
+- **Cursor Control:** Move the mouse cursor by moving the palm of your hand.  
+- **Left Click:** Perform a left click by touching your thumb and index finger together.  
+- **Right Click:** Perform a right click by touching your thumb and middle finger together.  
+- **Drawing Mode:** Activate a "drawing mode" using voice commands to hold down the left click while moving the hand, enabling freehand drawing on the screen.  
+- **Voice Dictation:** Use voice commands to type text directly into any application.  
+- **Visual Feedback:** Real-time on-screen indicators show the current mode and dictation status.
 
-Drawing Mode: Activate a "drawing mode" using voice commands to hold down the left click while moving the hand, enabling freehand drawing on the screen.
+## Requirements
 
-Voice Dictation: Use voice commands to type text directly into any application.
+- Python 3.8+  
+- OpenCV  
+- MediaPipe  
+- PyAutoGUI  
+- SpeechRecognition  
+- NumPy
 
-Visual Feedback: Real-time on-screen indicators show the current mode and dictation status.
+## How It Works
 
-Requirements
+1. The webcam captures your hand movements.  
+2. MediaPipe detects hand landmarks and tracks finger positions.  
+3. Gestures (thumb + index, thumb + middle) trigger mouse actions.  
+4. Voice commands can activate drawing mode or type text in real-time.  
+5. The cursor moves smoothly following your palm position.
 
-Python 3.8+
+## Use Cases
 
-OpenCV
+- Hands-free computer interaction  
+- Digital drawing or annotation  
+- Accessibility tool for users with limited mobility  
 
-MediaPipe
-
-PyAutoGUI
-
-SpeechRecognition
-
-NumPy
