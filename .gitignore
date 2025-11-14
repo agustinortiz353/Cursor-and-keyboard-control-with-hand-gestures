@@ -1,14 +1,6 @@
-# Entorno virtual
 venv/
+dist/
+__pycache__/
+*.exe
+# cualquier otra línea que estuviera en remoto
 
-# Distribuciones / compilados
-dist/
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.exe
-venv/
-dist/
-__pycache__/
-*.exe
